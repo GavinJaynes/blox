@@ -10,17 +10,21 @@ import blurCyanImage from '@/images/blur-cyan.png'
 import blurIndigoImage from '@/images/blur-indigo.png'
 
 const codeLanguage = 'javascript'
-const code = `export default {
-  strategy: 'predictive',
-  engine: {
-    cpus: 12,
-    backups: ['./storage/cache.wtf'],
-  },
+const code = `{
+  "name": 'my-new-component',
+  "friendlyName": 'My new component',
+  "version": '0.1'
+  "functions": [
+    {
+      "name": "main"
+      "entry": "main.ts"
+    }
+  ]
 }`
 
 const tabs = [
-  { name: 'manifest.js', isActive: true },
-  { name: 'index.ts', isActive: false },
+  { name: 'manifest.json', isActive: true },
+  { name: 'main.ts', isActive: false },
   { name: 'package.json', isActive: false },
 ]
 
